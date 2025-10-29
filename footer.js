@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Guardians: Humanity Unbound</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Header Component -->
+    <custom-header></custom-header>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 md:h-screen max-h-[800px] bg-blue-900 overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <img src="http://static.photos/people/1200x630/1" alt="Global Solidarity" class="w-full h-full object-cover">
+        <div class="absolute inset-0 flex flex-col justify-center items-center text-white px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Unidos pela dignidade humana</h1>
+            <p class="text-xl md:text-2xl max-w-2xl">Promovendo direitos humanos e proteção aos refugiados em todo o mundo através da cooperação global</p>
+            <a href="#about" class="mt-8 bg-white text-blue-900 px-6 py-3 rounded-lg font-medium hover:bg-blue-100 transition duration-300">Saiba mais</a>
+        </div>
+    </section>
+
+    <!-- Image Slider -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Nossa Ação Global</h2>
+            <custom-slider></custom-slider>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="http://static.photos/office/1024x576/2" alt="ONU Headquarters" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 text-blue-900">Sobre a ONU</h2>
+                    <p class="text-lg mb-4">A Organização das Nações Unidas (ONU) foi fundada em 1945 após a Segunda Guerra Mundial com o objetivo de manter a paz e a segurança internacionais, promover o desenvolvimento sustentável e proteger os direitos humanos.</p>
+                    <p class="text-lg mb-6">Com 193 Estados-membros, a ONU atua em diversas frentes, desde assistência humanitária até a promoção de acordos internacionais que protegem os direitos fundamentais de todos os seres humanos.</p>
+                    <a href="#" class="inline-block bg-blue-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition duration-300">Mais sobre a ONU</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Refugees Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="http://static.photos/travel/1024x576/3" alt="Refugees" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 text-blue-900">Refugiados</h2>
+                    <p class="text-lg mb-4">Refugiados são pessoas que foram forçadas a deixar seus países devido a conflitos, perseguições ou violações graves de direitos humanos. Atualmente, mais de 100 milhões de pessoas estão deslocadas à força em todo o mundo.</p>
+                    <p class="text-lg mb-6">A ONU, através do ACNUR (Alto Comissariado das Nações Unidas para Refugiados), trabalha para proteger os direitos dos refugiados e encontrar soluções duradouras, incluindo reassentamento em países seguros.</p>
+                    <a href="#" class="inline-block bg-blue-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition duration-300">Saiba como ajudar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Human Rights Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900">Direitos Humanos</h2>
+                <p class="text-xl mt-4 max-w-3xl mx-auto">A Declaração Universal dos Direitos Humanos estabelece os direitos básicos que todos os seres humanos devem desfrutar, sem discriminação.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="heart" class="text-blue-900 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-900">Igualdade e Dignidade</h3>
+                    <p>Todos os seres humanos nascem livres e iguais em dignidade e direitos. São dotados de razão e consciência e devem agir em relação uns aos outros com espírito de fraternidade.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="shield" class="text-blue-900 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-900">Proteção Legal</h3>
+                    <p>Toda pessoa tem direito à vida, à liberdade e à segurança pessoal. Ninguém será mantido em escravidão ou servidão, ou submetido a tortura ou a tratamento cruel.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="globe" class="text-blue-900 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-900">Direitos Sociais</h3>
+                    <p>Toda pessoa tem direito a um padrão de vida capaz de assegurar a si e à sua família saúde e bem-estar, incluindo alimentação, vestuário, habitação e cuidados médicos.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-blue-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition duration-300">Ver Declaração Completa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Country Actions Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-blue-900">Ações dos Países</h2>
+                <p class="text-xl mt-4 max-w-3xl mx-auto">Como diferentes nações estão respondendo às crises de refugiados e direitos humanos</p>
+            </div>
+            
+            <custom-country-cards></custom-country-cards>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Junte-se à Nossa Causa</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Todos podemos fazer a diferença na proteção dos direitos humanos e no apoio aos refugiados.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-medium hover:bg-blue-100 transition duration-300">Seja um Voluntário</a>
+                <a href="#" class="border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-900 transition duration-300">Doar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <custom-footer></custom-footer>
+
+    <!-- Scripts -->
+    <script src="components/header.js"></script>
+    <script src="components/slider.js"></script>
+    <script src="components/country-cards.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
